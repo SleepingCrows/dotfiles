@@ -22,3 +22,8 @@ default modkey: super
 $mod+t: emacsclient -c -a 'emacs'
 $mod+g: prompt to enable or disable gaps
 ```
+
+
+#### missing fonts / Emoji
+
+`paru -S ttf-symbola noto-fonts-cjk noto-fonts-emoji`
