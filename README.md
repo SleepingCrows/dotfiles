@@ -6,7 +6,7 @@ You probably shouldn't use it yet.
 
 ### Dependencies
 
-#### Arch archlinux
+#### Arch Linux
 You should have an AUR Helper Installed, such as `paru`.
 
 ```paru -S i3-gaps polybar terminus-font alacritty nitrogen picom-ibhagwan-git```
