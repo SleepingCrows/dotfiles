@@ -187,9 +187,23 @@ bindsym $mod+r mode "resize"
 # For every window, set the border to 0 to remove frames.
 for_window [class=".*"] border pixel 0
 
+# Origin Window Fix
+for_window [instance="origin.exe"] floating enable
+
+
 # Window Gap settings.
 gaps inner 20
 gaps outer 10
+
+# Gaps Toggler
+set $mode_gaps Toggle gaps: (1) on (2) off
+bindsym $mod+g mode "$mode_gaps"
+mode "$mode_gaps" {
+    bindsym 1 mode "default", gaps inner all set 20, gaps outer all set 10
+    bindsym 2 mode "default", gaps inner all set 1, gaps outer all set 1
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available
